@@ -25,6 +25,23 @@ public class WebClient2 {
             // 20 - http cannot be retrieved
             // ^^^^^^ ERROR MESSAGES from CURL
 
+            //Curl is how web servers communicate
+            // ALL CURLS IS MAKING CALLS TO END POINT: POST, GET, PUT, DELETE
+
+            // POST - sending data to the back-end
+            // PUT - updating data || most of the time you use POST and GET 99% of the time
+            // DELETE - delete data
+            // GET - retrieve data
+
+            // Understand front end and back end
+            // Understand databases and APIs
+
+            // API and EndPoints (foo, bar, test)
+            // Hitting those end points and getting the responses
+            //Front end makes API calls to the back end -> receives something back
+
+            //Like user name and password -> BACK END stores it
+
             HttpClient client = HttpClient.newBuilder() // New client for HTTP
                     .version(HttpClient.Version.HTTP_2)  //Version HTTP
                     .followRedirects(HttpClient.Redirect.NORMAL)  // not be redirected from any other webpage
